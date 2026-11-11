@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sql-server-db": {
+      "command": "npx",
+      "args": ["tsx", "D:/mcp-sqlserver/src/index.ts"]
+    }
+  }
+}

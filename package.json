@@ -1,0 +1,31 @@
+{
+  "name": "mssql-mcp-server",
+  "version": "1.0.0",
+  "description": "Production-ready MCP Server for Microsoft SQL Server",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "dev": "tsx src/index.ts --watch",
+    "inspect": "npx @modelcontextprotocol/inspector npx tsx --env-file=.env src/index.ts",
+    "inspect1": "npx @modelcontextprotocol/inspector npx tsx --env-file=.env src/index1.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "dotenv": "^18.0.8",
+    "mssql": "^12.7.10",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
